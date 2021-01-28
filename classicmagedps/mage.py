@@ -150,8 +150,8 @@ class Mage:
         self.env.p(f"{self.env.time()} - ({self.name}) {msg}")
 
     def fireball(self, pyro_on_t2_proc=False):
-        min_dmg = 561
-        max_dmg = 715
+        min_dmg = 596
+        max_dmg = 760
         casting_time = 3
 
         if pyro_on_t2_proc and self._t2proc:
@@ -284,8 +284,8 @@ class Mage:
         yield from self._fire_spell(name='pyroblast', min_dmg=min_dmg, max_dmg=max_dmg, casting_time=casting_time)
 
     def frostbolt(self):
-        min_dmg = 440
-        max_dmg = 475
+        min_dmg = 515
+        max_dmg = 555
         casting_time = 2.5
 
         yield from self._frost_spell(name='frostbolt', min_dmg=min_dmg, max_dmg=max_dmg, casting_time=casting_time)
